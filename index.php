@@ -11,9 +11,10 @@ $submit = filter_input(INPUT_POST, 'submit');
     <title> Converter </title>
 </head>
 <body>
+ <form action = "index.php" method = "post">
     Zadejte peníze v Kč <input type="text" name="money">
-    <p> <input type="submit" name="submit" value="Odeslat"> </p>
-
+    <input type="submit"
+    
     <?php
  if (isset($submit)) { ?>
  Peníze v eurech: <?= $converter ?>
