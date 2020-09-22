@@ -3,7 +3,6 @@
  $spz = filter_input(INPUT_POST, 'spz');
  $auto = filter_input(INPUT_POST, 'auto');
  $stariauta = filter_input(INPUT_POST, 'stariauta');
- $cenaauta = filter_input(INPUT_POST, 'cenaczk');
  $types = array('Osobní automobil', 'Autobus','Dodávka','Nákladní automobil');
  ?>
 
@@ -24,9 +23,7 @@ if (isset($submit)) { ?>
   <p> Vozidlo: <?= $auto ?> </p>
   <p> SPZ: <?= $spz ?> </p>
   <p> Stáří auta: <?= $stariauta ?> </p>
-  <p> Cena auta v euro: <?= $cenaauta ?> </p>
   
-
  <?php
   if ($stariauta > 2009) { ?>
     Moderní
@@ -48,8 +45,6 @@ if (isset($submit)) { ?>
 <form action="index.php" method="post">
 
  Rok výroby: <input type="number" id="stari" name="stariauta" min="1900" max="2020">
-
- Cena v Czk <input type="text" id="cena" name="cenaczk">
 
  Typ vozidla: <select name="auto" id="cars">
  <?php foreach ($types as $type) { ?>
