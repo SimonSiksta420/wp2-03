@@ -19,8 +19,8 @@ $kolikpenez = filter_input(INPUT_POST, 'penize')
 
 if(isset($submit)) { ?>
 
-
-} 
+<?php 
+} else { } ?>
 
 <body>
     
