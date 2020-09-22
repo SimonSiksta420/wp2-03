@@ -24,7 +24,7 @@ if (isset($submit)) { ?>
   <p> Vozidlo: <?= $auto ?> </p>
   <p> SPZ: <?= $spz ?> </p>
   <p> Stáří auta: <?= $stariauta ?> </p>
-  <p> Cena auta v euro: <?= $cenaczk ?> </p>
+  <p> Cena auta v euro: <?= $cenaauta ?> </p>
   
 
  <?php
