@@ -3,7 +3,7 @@ $submit = filter_input(INPUT_POST, 'submit');
 $czkeuro = filter_input(INPUT_POST, 'czkdoeuro');
 $eurodoczk = filter_input(INPUT_POST, 'eurodoczk');
 $kurzeuro = 27;
-$kurzczk = 0,37;
+$kurzczk = 0.37;
 $kolikpenez = filter_input(INPUT_POST, 'penize')
 ?>
 
