@@ -17,14 +17,14 @@ $kolikpenez = filter_input(INPUT_POST, 'penize')
 
 <?php
 
-if(isset($submit)) { ?>
+if(isset($submit)) {  ?>
 
-<p> Euro do czk <?= $eurodoczk = $kolikpenez * $kurzeuro ?> </p>
-<p> Czk do euro <?= $czkeuro = $kolikpenez * $kurzczk ?> </p>
+ <p> Euro do czk <?= $eurodoczk = $kolikpenez * $kurzeuro ?> </p>
+ <p> Czk do euro <?= $czkeuro = $kolikpenez * $kurzczk ?> </p>
 
-<?php
-
-} else { } ?>
+ <?php
+ 
+ } else { } ?>
 
 <body>
     
