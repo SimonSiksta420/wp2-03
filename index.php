@@ -15,18 +15,20 @@ $kolikpenez = filter_input(INPUT_POST, 'penize')
     <title> Penežní converter </title>
 </head>
 
+<body>
+
 <?php
 
 if(isset($submit)) {  ?>
 
- <p> Euro do czk <?= $eurodoczk = $kolikpenez * $kurzeuro ?> </p>
- <p> Czk do euro <?= $czkeuro = $kolikpenez * $kurzczk ?> </p>
+ <p> Euro do czk: <?= $eurodoczk = $kolikpenez * $kurzeuro ?> </p>
+ <p> Czk do euro: <?= $czkeuro = $kolikpenez * $kurzczk ?> </p>
 
  <?php
- 
+
  } else { } ?>
 
-<body>
+
     
   <form action="index.php" method="post">
 
