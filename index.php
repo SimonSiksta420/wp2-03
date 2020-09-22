@@ -3,7 +3,7 @@
  $spz = filter_input(INPUT_POST, 'spz');
  $auto = filter_input(INPUT_POST, 'auto');
  $stariauta = filter_input(INPUT_POST, 'stariauta');
- $cenaauta = filter_input(INPUT_POST, 'cenaczk' )
+ $cenaauta = filter_input(INPUT_POST, 'cenaczk');
  $types = array('Osobní automobil', 'Autobus','Dodávka','Nákladní automobil');
  ?>
 
