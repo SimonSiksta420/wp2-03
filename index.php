@@ -1,6 +1,6 @@
 <?php
 $submit = filter_input(INPUT_POST, 'submit');
-$czkeuro = filter_input(INPUT_POST, 'czkdoeuro');
+$czdoeuro = filter_input(INPUT_POST, 'czkdoeuro');
 $eurodoczk = filter_input(INPUT_POST, 'eurodoczk');
 $kurzeuro = 27;
 $kurzczk = 0.37;
@@ -26,8 +26,8 @@ if(isset($submit)) { ?>
  if ($eurodoczk) { ?>
    <?= $eurodoczk = $kolikpenez * $kurzeuro ?>
   <?php
-   } elseif ($czkeuro) { ?>
-     <?= $czkeuro = $kolikpenez * $kurzczk ?>
+   } elseif ($czkdoeuro) { ?>
+     <?= $czkdoeuro = $kolikpenez * $kurzczk ?>
    <?php
    } else { ?>
    <?php
