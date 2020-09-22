@@ -27,9 +27,8 @@ if(isset($submit)) { ?>
  <?php
 
 
-} else { ?>
+} else { } ?>
 
-}
 <form action="index.php" method="post">
 
  <p> Kolik penež <input type="text" name="penize"> </p>
