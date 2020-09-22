@@ -1,6 +1,6 @@
 <?php
 $submit = filter_input(INPUT_POST, 'submit');
-$czdoeuro = filter_input(INPUT_POST, 'czkdoeuro');
+$czkdoeuro = filter_input(INPUT_POST, 'czkdoeuro');
 $eurodoczk = filter_input(INPUT_POST, 'eurodoczk');
 $kurzeuro = 27;
 $kurzczk = 0.37;
