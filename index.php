@@ -11,8 +11,8 @@
   <form action="index.php" method="post">
 
  <p> Kolik penež <input type="text" name="penize"> </p>
- <p> Czk do Eur <input type="radio" name="converter"> </p>
- <p> Euro do czk <input type="radio" name="converter"> </p>
+ <p> Czk do Eur <input type="radio" value="czkdoeuro" name="converter"> </p>
+ <p> Euro do czk <input type="radio" value="eurodoczk" name="converter"> </p>
 
  <input type="submit" name="submit" value="Odeslat">
 
