@@ -10,9 +10,9 @@
     
   <form action="index.php" method="post">
 
- Kolik penež <input type="text" name="penize">
- Czk do Eur <input type="radio" name="czkdoeuro">
- Euro do czk <input type="radio" name="eurodoczk">
+ <p> Kolik penež <input type="text" name="penize"> </p>
+ <p> Czk do Eur <input type="radio" name="converter"> </p>
+ <p> Euro do czk <input type="radio" name="converter"> </p>
 
  <input type="submit" name="submit" value="Odeslat">
 
