@@ -1,3 +1,7 @@
+<?php
+$czkdoeuro filter_input(INPUT_POST,  )
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
