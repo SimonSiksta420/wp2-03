@@ -26,7 +26,7 @@ if(isset($submit)) { ?>
  if ($eurodoczk = $kolikpenez * $kurzeuro) { ?>
    <?= $eurodoczk ?>
   <?php
-   } elseif ($czkdoeuro = $kolikpenez * $kurzczk) { ?>
+   } elseif ($czkdoeuro = $kolikpenez / $kurzczk) { ?>
      <?= $czkdoeuro ?>
    <?php
    } else { ?>
