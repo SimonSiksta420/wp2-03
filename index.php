@@ -1,37 +1,22 @@
-<?php
-$converter = filter_input(INPUT_POST, 'money')
-$submit = filter_input(INPUT_POST, 'submit');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Converter </title>
+    <title> Penežní converter </title>
 </head>
+
 <body>
- <form action = "index.php" method = "post">
-    Zadejte peníze v Kč <input type="text" name="money">
-    <input type="submit"
     
-    <?php
- if (isset($submit)) { ?>
- Peníze v eurech: <?= $converter ?>
+  <form action="index.php" method="post">
 
- <?php
-  if ($converter = $converter * 27) { ?>
-      Peníze v eurech
-  <?php    
-  } else { } ?>
- 
- 
- 
- 
-<?php
-} else { } ?>
- 
+ Kolik penež <input type="text" name="penize">
+ Czk do Eur <input type="radio" name="czkdoeuro">
+ Euro do czk <input type="radio" name="eurodoczk">
 
+ <input type="submit" name="submit" value="Odeslat">
+
+</form>
 
 </body>
 </html>
