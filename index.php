@@ -1,5 +1,5 @@
 <?php
-$czkdoeuro filter_input(INPUT_POST,  )
+
 ?>
 
 <!DOCTYPE html>
