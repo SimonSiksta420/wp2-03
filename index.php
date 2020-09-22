@@ -27,7 +27,7 @@ if(isset($submit)) { ?>
  <?php
 
 
-} else { } ?>
+} else {  ?>
 
 <form action="index.php" method="post">
 
@@ -38,6 +38,7 @@ if(isset($submit)) { ?>
  <input type="submit" name="submit" value="Odeslat">
 
 </form>
-
+<?php  }  ?>
+</form>
 </body>
 </html>
