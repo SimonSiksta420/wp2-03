@@ -1,7 +1,5 @@
 <?php
 $submit = filter_input(INPUT_POST, 'submit');
-$czkdoeuro = filter_input(INPUT_POST, 'czkdoeuro');
-$eurodoczk = filter_input(INPUT_POST, 'eurodoczk');
 $kurzeuro = 27;
 $kurzczk = 0.37;
 $kolikpenez = filter_input(INPUT_POST, 'penize')
@@ -23,16 +21,14 @@ if(isset($submit)) { ?>
 
  <?php
 
- if ($eurodoczk == $kolikpenez * $kurzeuro) { ?>
-   <?= $eurodoczk ?>
-  <?php
-   } elseif ($czkdoeuro == $kolikpenez * $kurzczk) { ?>
-     <?= $czkdoeuro ?>
-   <?php
-   } else { ?>
-   <?php
-   }
-   
+ if ($_POST['converter'] == "eurodoczk") {
+   echo ("<p>CZK ". $kolikpenez * $kurzeuro . "</p>");
+ } elseif ($_POST['converter'] == "czkdoeuro") {
+   echo ("<p> EUR " . $kolikpenez * $kurzczk . "</p>");
+ } else {
+   echo ("kurz není vybrán");
+ }
+
 
 } else {  ?>
 
